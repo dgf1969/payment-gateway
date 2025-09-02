@@ -1,0 +1,57 @@
+{
+  "name": "arafadev/payment-gateways",
+  "description": "Multi-gateway payments manager for Laravel",
+  "keywords": [
+    "laravel",
+    "payments",
+    "stripe",
+    "paypal",
+    "paymob",
+    "fawry",
+    "tabby",
+    "moyasar",
+    "myfatoorah",
+    "urway",
+    "geidea",
+    "telr",
+    "tamara",
+    "telr",
+    "alrajhibank",
+    "clickpay",
+    "hyperpay",
+    "tap",
+    "multi-gateway",
+    "payment-integration"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arafa Dev",
+      "email": "arafa.dev@gmail.com",
+      "homepage": "https://www.linkedin.com/in/arafadev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0|^8.1|^8.2|^8.3",
+    "illuminate/support": "^8.0|^9.0|^10.0|^12.0",
+    "illuminate/routing": "^8.0|^9.0|^10.0|^12.0",
+    "illuminate/config": "^8.0|^9.0|^10.0|^12.0",
+    "illuminate/contracts": "^8.0|^9.0|^10.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arafa\\Payments\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Arafa\\Payments\\PaymentServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
