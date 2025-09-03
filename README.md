@@ -14,13 +14,13 @@
 - [Creating a New Payment Gateway](#creating-a-new-payment-gateway)
 - [License](#license)
 
-## 🚀 Introduction
+## Introduction
 
 **payment-gateway** is a PHP package that provides a unified way to integrate multiple payment gateways into your Laravel application. It simplifies the process of handling different payment providers by offering a standardized interface and response format. 
 
 No more dealing with different API structures and response formats for each payment gateway! With payment-gateway, you can switch between payment providers with minimal code changes. ⚡
 
-## ✨ Features
+## Features
 
 - **Unified Interface** - Interact with all payment gateways using the same methods
 - **Standardized Responses** - All payment responses are normalized using the `PaymentResponse` class
@@ -30,7 +30,7 @@ No more dealing with different API structures and response formats for each paym
 - **Error Handling** - Consistent error handling across all payment gateways
 - **Test Mode Support** - Switch between test and live environments with a single config change
 
-## 💳 Available Payment Gateways
+## Available Payment Gateways
 
 The package currently supports the following payment gateways:
 
@@ -50,7 +50,7 @@ The package currently supports the following payment gateways:
 - **Urway** - Saudi payment gateway
 - **Tamara** - Buy now, pay later service
 
-## 📦 Installation
+## Installation
 
 You can install the package via composer:
 
@@ -58,7 +58,7 @@ You can install the package via composer:
 composer require arafadev/payment-gateways
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 After installation, publish the configuration file:
 
@@ -90,7 +90,7 @@ return [
 ];
 ```
 
-## 🔍 Usage
+## Usage
 
 ### Basic Usage with MoyasarService
 
@@ -157,7 +157,7 @@ $response->raw          // array - Raw response data from the gateway
 
 This standardization allows you to handle responses from different payment gateways in a consistent way.
 
-## 🛠️ Creating a New Payment Gateway
+## Creating a New Payment Gateway
 
 To create your own payment gateway, you need to:
 
@@ -266,7 +266,7 @@ class CustomGatewayService extends BasePaymentService implements PaymentGatewayI
 }
 ```
 
-## 📄 License
+## License
 
 The payment-gateway package is open-sourced software licensed under the [MIT license](LICENSE).
 
